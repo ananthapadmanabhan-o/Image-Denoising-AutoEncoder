@@ -10,6 +10,17 @@ class DataIngestionConfig:
     local_data_file: Path
     unzip_dir:Path
 
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    local_data_source_path:Path
+    local_input_feature_file: str
+    local_output_feature_file: str
+    image_height: int
+    image_width: int 
+    image_channel: int
+    
+
 
 @dataclass(frozen=True)
 class BaseModelConfig:
@@ -25,3 +36,5 @@ class TrainingConfig:
     training_data: Path
     params_epochs: int
     params_batch_size: int
+
+

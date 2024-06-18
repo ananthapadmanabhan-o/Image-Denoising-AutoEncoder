@@ -1,12 +1,12 @@
 from denoisingEncoder.constants import CONFIG_FILE_PATH,PARAMS_FILE_PATH
 from denoisingEncoder.utils.common import read_yaml, create_directories
 from denoisingEncoder.entity.config_entity import (DataIngestionConfig,
+                                                   DataTransformationConfig,
                                                    BaseModelConfig,
                                                    TrainingConfig
                                                    )
 
 import os
-from pathlib import Path
 
 
 
@@ -36,4 +36,24 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
 
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+
+        config = self.config.data_transformation
+        params = self.params
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            local_data_source_path=config.local_data_source_path,
+            local_input_feature_file=config.local_input_feature_file,
+            local_output_feature_file=config.local_output_feature_file,
+            image_height=params.IMAGE_HEIGHT,
+            image_width=params.IMAGE_WIDTH,
+            image_channel=params.IMAGE_CHANNEL
+        )
+
+        return data_transformation_config
