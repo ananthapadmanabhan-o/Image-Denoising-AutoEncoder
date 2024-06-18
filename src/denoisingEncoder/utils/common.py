@@ -8,7 +8,7 @@ from denoisingEncoder import logger
 
 
 @ensure_annotations
-def read_yaml(yaml_path:Path) ->ConfigBox:
+def read_yaml(yaml_path:Path) -> ConfigBox:
     '''
     Args:
         yaml_path (Path)
@@ -30,7 +30,7 @@ def read_yaml(yaml_path:Path) ->ConfigBox:
     
 
 @ensure_annotations
-def make_directories(dir_path:list):
+def create_directories(dir_path:list):
     '''create list of directories
     
     Args:
