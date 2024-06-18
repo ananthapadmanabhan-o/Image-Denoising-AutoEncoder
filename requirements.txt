@@ -1,0 +1,10 @@
+tensorflow==2.15
+numpy
+pandas
+python-box
+pyYAML
+tqdm
+ensure
+scikit-image
+mlflow
+-e .
