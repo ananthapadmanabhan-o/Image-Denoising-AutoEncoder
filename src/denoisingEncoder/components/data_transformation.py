@@ -4,10 +4,9 @@ from denoisingEncoder.utils.common import save_pkl
 import numpy as np
 from tqdm import tqdm
 import os
-
+from pathlib import Path
 from skimage.transform import resize
 from skimage.io import imread
-from pathlib import Path
 
 
 def add_noise(img,sig=30):
@@ -43,8 +42,8 @@ class DataTransformation:
         noise_dataset = np.array(noise_dataset)
         logger.info('data transformed successfully')
 
-        save_pkl(img_dataset,self.config.local_output_feature_file)
-        save_pkl(noise_dataset,self.config.local_input_feature_file)
+        save_pkl(img_dataset,Path(self.config.local_output_feature_file))
+        save_pkl(noise_dataset,Path(self.config.local_input_feature_file))
 
 
 

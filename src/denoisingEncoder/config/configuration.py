@@ -57,3 +57,21 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+    
+    def get_base_model_config(self) -> BaseModelConfig:
+        config = self.config.base_model
+        params = self.params
+
+        create_directories([config.root_dir])
+
+        base_model_config = BaseModelConfig(
+            root_dir=config.root_dir,
+            base_model_path= config.base_model_path,
+            updated_base_model_path=config.updated_base_model_path,
+            image_height = params.IMAGE_HEIGHT,
+            image_width = params.IMAGE_WIDTH,
+            image_channel = params.IMAGE_CHANNEL,
+            learning_rate= params.LEARNING_RATE
+        )
+
+        return base_model_config

@@ -43,7 +43,7 @@ def create_directories(dir_path:list):
 
 
 @ensure_annotations
-def save_pkl(data,pkl_path:str):
+def save_pkl(data,pkl_path:Path):
 
     try:
         with open(pkl_path,'wb') as pkl_file:
@@ -54,7 +54,7 @@ def save_pkl(data,pkl_path:str):
 
 
 # @ensure_annotations
-def load_pkl(pkl_path:str) -> Any:
+def load_pkl(pkl_path:Path) -> Any:
 
     try:
         with open(pkl_path,'rb') as pkl_file:
