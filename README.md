@@ -8,7 +8,7 @@ This project aims at exploring autoencoder architecture for image denoising. Aut
 
 check out [AutoEncoders](https://en.wikipedia.org/wiki/Autoencoder)
 learn more about [Image-Noise](https://en.wikipedia.org/wiki/Image_noise#:~:text=Image%20noise%20is%20random%20variation,of%20an%20ideal%20photon%20detector.)
-
+GitHub link [Project-Repo](https://github.com/ananthapadmanabhan-o/Image-Denoising-AutoEncoder)
 ## 🚀 Installation and Setup 🔥
 
 ### STEP 01
