@@ -56,12 +56,15 @@ python3 main.py
 ### Pipelines🤖
 
 Running main.py  will start the pipelines.
-    - 📥 **Data ingestion pipeline** downloads the data **and** stores it in artifacts folder.
-    - **Data transformation pipeline**  preproccess the stored data and splits it into input feature and output targets. Then
-    transformed data is saved as pickle file in artifacts.
-    - **Base model pipeline** creates and initializes the deep learning model. The model follows autoencoder architecture. Tensorflow
-    Keras is used for building the model. After building, the model is saved as pickle file even before training(model.fit()) method is
-    not called.
-    - **Training pipeline** loads the untrained model from Base model pipeline and loads the data which was pickled earlier. Training
-    pipeling collects the confgurations and parameter for the model from config.yaml and params.yaml files. Training pipeline is
-    configured to train the model in GPU if GPUs are available in the machine.
+- 📥 **Data ingestion pipeline** downloads the data **and** stores it in artifacts folder.
+
+- **Data transformation pipeline**  preproccess the stored data and splits it into input feature and output targets. Then
+transformed data is saved as pickle file in artifacts.
+
+- **Base model pipeline** creates and initializes the deep learning model. The model follows autoencoder architecture. Tensorflow
+Keras is used for building the model. After building, the model is saved as pickle file even before training(model.fit()) method is
+not called.
+
+- **Training pipeline** loads the untrained model from Base model pipeline and loads the data which was pickled earlier. Training
+pipeling collects the confgurations and parameter for the model from config.yaml and params.yaml files. Training pipeline is
+configured to train the model in GPU if GPUs are available in the machine.
