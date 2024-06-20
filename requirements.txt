@@ -1,5 +1,4 @@
-tensorflow[and-cuda]
-numpy
+tensorflow==2.15
 pandas
 python-box
 pyYAML

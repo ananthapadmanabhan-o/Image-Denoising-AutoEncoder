@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 from skimage.transform import resize
 import numpy as np
 from denoisingEncoder import logger
-
+import random
+random.seed(42)
 
 
 class PredictionPipeline:
