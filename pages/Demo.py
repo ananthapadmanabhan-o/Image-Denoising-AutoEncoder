@@ -1,6 +1,7 @@
-import streamlit as st 
+import streamlit as st
 from denoisingEncoder.pipeline.prediction import PredictionPipeline
-
+from skimage.transform import resize
+from skimage.io import imread
 
 st.set_page_config(
     page_title='Demo',
@@ -16,7 +17,8 @@ uploaded_image = st.file_uploader("", type=["png","jpg","bmp","jpeg"])
 
 
 if uploaded_image is not None:
-    image = uploaded_image
+    image = imread(uploaded_image)
+    image = resize(image,(256,256))
     
     img_exist_flag = False
 
@@ -37,13 +39,13 @@ if uploaded_image is not None:
         st.image(image=image,use_column_width=True)
 
     if right_container.button('Denoised image',use_container_width=True,key=3):
-            st.image(image='artifacts/output/output.png',use_column_width=True)
+            st.image(image='assets/output/output.png',use_column_width=True)
             img_exist_flag = True
 
     if img_exist_flag:
         st.download_button(
                             label='Download Image',
-                            data= open('artifacts/output/output.png', 'rb').read(),
+                            data= open('assets/output/output.png', 'rb').read(),
                             file_name='denoised_image.png',
                             mime='image/png',
                             type='primary',
