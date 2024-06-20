@@ -10,7 +10,8 @@ git clone https://github.com/ananthapadmanabhan-o/Image-Denoising-AutoEncoder.gi
 
 ### STEP 02
 #### Create a virtual environment after opening the repository
-
+```bash cd Image-Denoising-AutoEncoder
+```
 ```bash
 python3 -m venv venv
 ```
