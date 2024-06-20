@@ -1,6 +1,6 @@
 # Image-Denoising-AutoEncoder
 
-## How to Run?
+## Installation and Setup 🚀
 
 ### STEP 01
 #### Clone the repository
