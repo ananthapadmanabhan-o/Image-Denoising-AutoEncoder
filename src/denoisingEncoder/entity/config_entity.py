@@ -36,8 +36,8 @@ class BaseModelConfig:
 @dataclass(frozen=True)
 class TrainingConfig:
     root_dir: Path
+    base_model_path: Path
     trained_model_path: Path
-    updated_base_model_path: Path
     local_input_feature_file: Path
     local_output_feature_file: Path    
     params_epochs: int

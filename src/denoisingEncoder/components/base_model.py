@@ -122,4 +122,5 @@ class BaseModel:
         logger.info('Model Compiled Successfully')
 
         save_pkl(model,Path(self.config.base_model_path))
+        logger.info('Untrained Model Saved Successfully')
 

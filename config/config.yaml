@@ -19,4 +19,7 @@ base_model:
   
 training:
   root_dir: artifacts/training
-  trained_model_path: artifacts/training/model.pkl
+  base_model_path: artifacts/base_model/base_model.pkl
+  trained_model_path: artifacts/training/trained_model.pkl
+  local_input_feature_file: artifacts/data_transformation/input_features.pkl
+  local_output_feature_file: artifacts/data_transformation/output_features.pkl

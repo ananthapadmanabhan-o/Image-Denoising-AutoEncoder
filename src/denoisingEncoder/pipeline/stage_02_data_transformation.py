@@ -2,7 +2,6 @@ from denoisingEncoder.config.configuration import ConfigurationManager
 from denoisingEncoder.components.data_transformation import DataTransformation
 from denoisingEncoder import logger
 
-
 class DataTransformationPipeline:
     def __init__(self):
         pass

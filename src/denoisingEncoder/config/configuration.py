@@ -75,3 +75,21 @@ class ConfigurationManager:
         )
 
         return base_model_config
+    
+    def get_training_config(self) -> TrainingConfig:
+        config = self.config.training
+        params = self.params
+
+        create_directories([config.root_dir])
+
+        training_config = TrainingConfig(
+            root_dir = config.root_dir,
+            base_model_path= config.base_model_path,
+            trained_model_path =config.trained_model_path,
+            local_input_feature_file= config.local_input_feature_file,
+            local_output_feature_file=config.local_output_feature_file,    
+            params_epochs=params.EPOCHS,
+            params_batch_size=params.BATCH_SIZE
+        )
+
+        return training_config
