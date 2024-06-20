@@ -23,3 +23,7 @@ training:
   trained_model_path: artifacts/training/trained_model.pkl
   local_input_feature_file: artifacts/data_transformation/input_features.pkl
   local_output_feature_file: artifacts/data_transformation/output_features.pkl
+
+predict:
+  root_dir: artifacts/output
+  output_image_path: artifacts/output/output.png
