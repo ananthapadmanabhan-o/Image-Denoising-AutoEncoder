@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```
 ### STEP 05
 #### Model parameters setup
-    - Model parameters like epochs, batch size etc can be modified in the params.yaml file before training
+- Model parameters like epochs, batch size etc can be modified in the params.yaml file before training
 
 ### STEP 06
 #### Run this command
