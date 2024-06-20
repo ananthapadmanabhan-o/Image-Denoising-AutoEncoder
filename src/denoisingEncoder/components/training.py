@@ -1,5 +1,5 @@
 from denoisingEncoder.entity.config_entity import TrainingConfig
-from denoisingEncoder.utils.common import load_pkl,save_pkl
+from denoisingEncoder.utils.common import load_pkl,save_pkl, create_directories
 from pathlib import Path
 import tensorflow as tf
 from denoisingEncoder import logger
@@ -26,3 +26,6 @@ class Training:
             model.fit(x_train,y_train,batch_size=self.config.params_batch_size,epochs=self.config.params_epochs)
             logger.info('Model Trained Successfully')
         save_pkl(model,Path(self.config.trained_model_path))
+        create_directories(['assets/model'])
+        save_pkl(model,Path('assets/model/model.pkl'))
+        

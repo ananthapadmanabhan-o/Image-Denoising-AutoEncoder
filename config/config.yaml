@@ -24,6 +24,7 @@ training:
   local_input_feature_file: artifacts/data_transformation/input_features.pkl
   local_output_feature_file: artifacts/data_transformation/output_features.pkl
 
+
 predict:
-  root_dir: artifacts/output
-  output_image_path: artifacts/output/output.png
+  root_dir: assets/output
+  output_image_path: assets/output/output.png

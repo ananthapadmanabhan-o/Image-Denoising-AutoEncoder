@@ -23,7 +23,7 @@ class PredictionPipeline:
         logger.info('image resized successfully')
         img = np.array([img])
 
-        model = load_pkl(Path(self.config.training.trained_model_path))
+        model = load_pkl(Path('assets/model/model.pkl'))
         result = model.predict(img)
         logger.info('Model predicted successfully')
         output_image = result[0,:]

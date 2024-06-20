@@ -10,13 +10,13 @@ st.set_page_config(
 
 st.header("Image Denoising AutoEncoder", divider='rainbow',)
 
-st.image('assets/head_image.png',use_column_width=True)
+st.image('assets/imgs/head_image.png',use_column_width=True)
 st.markdown(
     '''## An introduction to Auto-Encoder architecture
 
 '''
 )
-st.image('assets/autoencoder.png',use_column_width=True)
+st.image('assets/imgs/autoencoder.png',use_column_width=True)
 
 
 

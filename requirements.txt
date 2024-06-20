@@ -1,4 +1,4 @@
-tensorflow==2.15
+tensorflow[and-cuda]
 numpy
 pandas
 python-box
@@ -6,8 +6,5 @@ pyYAML
 tqdm
 ensure
 scikit-image
-mlflow
 streamlit
-streamlit-navigation-bar
-streamlit-image-coordinates
 -e .
