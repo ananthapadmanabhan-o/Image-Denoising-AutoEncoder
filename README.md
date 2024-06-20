@@ -1,13 +1,13 @@
 # Image-Denoising-AutoEncoder
 
-## Introduction
+## Introduction 🚨
 
-One of the fundamental challenge in signal processing is the presence of noise. Random nature of noise makes it difficult to process the data and distructively affects the quality of data collected. The field of computer vision is growing large with its vast applications accross different field. Advancements in computer vision demands high quality image data for building robust state of the art models. 
+One of the fundamental challenge in signal processing is the presence of noise. Random nature of noise makes it difficult to process the data and distructively affects the quality of data collected. The field of computer vision is growing large with its vast applications accross different fields. Advancements in computer vision demands high quality image data for building robust state of the art models. 
 
 This project aims at exploring autoencoder architecture for image denoising. AutoEncoder arcitecture is a neural netwoek architecture widely used for denoising and reconstruction of images and video files.
 
 check out [AutoEncoders](https://en.wikipedia.org/wiki/Autoencoder)
-
+learn more about [Image-Noise](https://en.wikipedia.org/wiki/Image_noise#:~:text=Image%20noise%20is%20random%20variation,of%20an%20ideal%20photon%20detector.)
 
 ## 🚀 Installation and Setup 🔥
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 
 ### STEP 05
-#### Model parameters setup 
+#### Model parameters setup ⚙️. 
 - Model parameters like epochs, batch size etc can be modified in the params.yaml file before training
 
 ### STEP 06
@@ -55,8 +55,8 @@ python3 main.py
 
 ### Pipelines🤖
 
-Running main.py  will start the pipelines.
-- 📥 **Data ingestion pipeline** downloads the data **and** stores it in artifacts folder.
+#### Running main.py  will start the pipelines.
+- 📥 **Data ingestion pipeline** downloads the data and stores it in artifacts folder🛢️.
 
 - **Data transformation pipeline**  preproccess the stored data and splits it into input feature and output targets. Then
 transformed data is saved as pickle file in artifacts.
@@ -65,6 +65,6 @@ transformed data is saved as pickle file in artifacts.
 Keras is used for building the model. After building, the model is saved as pickle file even before training(model.fit()) method is
 not called.
 
-- **Training pipeline** loads the untrained model from Base model pipeline and loads the data which was pickled earlier. Training
+- **Training pipeline**  loads the untrained model from Base model pipeline and loads the data which was pickled earlier. Training
 pipeling collects the confgurations and parameter for the model from config.yaml and params.yaml files. Training pipeline is
 configured to train the model in GPU if GPUs are available in the machine.
