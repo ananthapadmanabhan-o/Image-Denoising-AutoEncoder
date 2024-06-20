@@ -8,4 +8,6 @@ ensure
 scikit-image
 mlflow
 streamlit
+streamlit-navigation-bar
+streamlit-image-coordinates
 -e .
