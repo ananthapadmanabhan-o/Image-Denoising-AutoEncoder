@@ -3,14 +3,13 @@ from denoisingEncoder.pipeline.prediction import PredictionPipeline
 
 
 st.set_page_config(
+    page_title='Demo',
     layout='centered',
+    page_icon='🎯',
+    initial_sidebar_state="expanded"
 )
 
-
-
-
-st.title("Image Denoising AutoEncoder")
-
+st.header("Image Denoising AutoEncoder", divider='rainbow')
 
 uploaded_image = st.file_uploader("", type=["png","jpg","bmp","jpeg"])
 
