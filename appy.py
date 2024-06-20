@@ -1,7 +1,8 @@
 import streamlit as st 
 from denoisingEncoder.pipeline.prediction import PredictionPipeline
 
-
+st.title("Image Denoising AutoEncoder")
+st.image('assets/head_image.png')
 uploaded_image = st.file_uploader("Upload Image 🚀", type=["png","jpg","bmp","jpeg"])
 
 st.image(uploaded_image)
