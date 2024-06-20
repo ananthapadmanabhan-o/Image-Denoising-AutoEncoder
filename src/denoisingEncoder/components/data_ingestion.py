@@ -16,7 +16,7 @@ class DataIngestion:
                 url=self.config.source_url,
                 filename=self.config.local_data_file
             )
-            logger.info(f'{filename} download with following info: \n{headers}')
+            logger.info(f'{filename} downloaded')
         else:
             logger.info('File already exists')
 
