@@ -1,5 +1,13 @@
 # Image-Denoising-AutoEncoder
 
+## Introduction
+
+One of the fundamental challenge in signal processing is the presence of noise. Random nature of noise makes it difficult to process the data and distructively affects the quality of data collected. The field of computer vision is growing large with its vast applications accross different field. Advancements in computer vision demands high quality image data for building robust state of the art models. 
+
+This project aims at exploring autoencoder architecture for image denoising. AutoEncoder arcitecture is a neural netwoek architecture widely used for denoising and reconstruction of images and video files.
+
+check out [AutoEncoders](https://en.wikipedia.org/wiki/Autoencoder)
+
 ## 🚀 Installation and Setup 🔥
 
 ### STEP 01
