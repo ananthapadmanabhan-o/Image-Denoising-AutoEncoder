@@ -10,6 +10,9 @@ check out [AutoEncoders](https://en.wikipedia.org/wiki/Autoencoder)
 learn more about [Image-Noise](https://en.wikipedia.org/wiki/Image_noise#:~:text=Image%20noise%20is%20random%20variation,of%20an%20ideal%20photon%20detector.)
 GitHub link [Project-Repo](https://github.com/ananthapadmanabhan-o/Image-Denoising-AutoEncoder)
 Data set linke [link](https://www.kaggle.com/datasets/huaiyingu/bsd100)
+
+##### check out the app at[streallit app link](https://image-denoising-autoencoder.streamlit.app/)
+
 ## 🚀 Installation and Setup 🔥
 
 ### STEP 01
